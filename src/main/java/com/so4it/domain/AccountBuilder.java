@@ -7,22 +7,22 @@ public class AccountBuilder {
     private Double balance;
     private Double annualInterestRate;
 
-    public AccountBuilder setId(Long id) {
+    public AccountBuilder withtId(Long id) {
         this.id = id;
         return this;
     }
 
-    public AccountBuilder setOwner(String owner) {
+    public AccountBuilder withOwner(String owner) {
         this.owner = owner;
         return this;
     }
 
-    public AccountBuilder setBalance(Double balance) {
+    public AccountBuilder withBalance(Double balance) {
         this.balance = balance;
         return this;
     }
 
-    public AccountBuilder setAnnualInterestRate(Double annualInterestRate) {
+    public AccountBuilder withAnnualInterestRate(Double annualInterestRate) {
         this.annualInterestRate = annualInterestRate;
         return this;
     }
