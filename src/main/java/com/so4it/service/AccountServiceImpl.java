@@ -1,7 +1,8 @@
-package com.so4it;
+package com.so4it.service;
 
 import com.so4it.dao.AccountDao;
 import com.so4it.domain.Account;
+
 
 import java.util.Objects;
 import java.util.Optional;
@@ -22,6 +23,8 @@ public class AccountServiceImpl implements AccountService {
 
     public Double getMonthlyInterest(Long id) {
         Optional<Account> account = accountDao.read(id);
-        return account.get().getMonthlyInterestRate();
+        return account.get().getMonthlyInterestRate()*account.get().getBalance();
     }
+
+
 }
